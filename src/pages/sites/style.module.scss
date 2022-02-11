@@ -1,0 +1,150 @@
+.smartphone {
+	position: relative;
+
+	border-radius: 8px;
+
+	border: 24px solid rgb(29, 29, 29);
+	border-top: 64px solid rgb(29, 29, 29);
+	border-bottom: 82px solid rgb(29, 29, 29);
+
+	background-size: cover;
+	background-image: url(/bg/0.jpeg);
+
+	margin: 12px auto;
+
+	width: 30vw;
+	min-width: 400px;
+
+	height: 100vh;
+
+	> nav {
+		color: white;
+		background-color: rgb(58, 58, 58);
+
+		padding: 16px;
+
+		display: flex;
+		flex-direction: column;
+
+		gap: 16px;
+
+		div {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		input {
+			width: 80%;
+
+			border: 0;
+			border-radius: 12px;
+
+			margin: auto;
+			padding: 8px 16px;
+		}
+	}
+
+	.apps {
+		display: flex;
+		flex-flow: wrap;
+
+		gap: 24px;
+		padding: 24px;
+
+		* {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			div {
+				padding: 20px;
+
+				margin-bottom: 14px;
+
+				border-radius: 50%;
+			}
+		}
+	}
+
+	.actions {
+		bottom: 0;
+		position: absolute;
+
+		width: 100%;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+		padding: 12px;
+
+		* {
+			font-size: 48px;
+		}
+	}
+
+	.bts {
+		position: relative;
+
+		color: white;
+		background-size: cover;
+		background-image: url(/general/bts.jpeg);
+
+		width: 90%;
+		height: 25%;
+
+		margin: 0 5%;
+		padding: 10px;
+
+		font-size: 1.4em;
+
+		&:before {
+			content: "";
+
+			background: linear-gradient(transparent, black);
+
+			position: absolute;
+			width: 100%;
+			height: 50%;
+
+			top: 50%;
+			left: 0;
+		}
+	}
+
+	.jogos {
+		position: relative;
+
+		width: 90%;
+		height: 25%;
+
+		margin: 20px 5%;
+		padding: 10px;
+
+		font-size: 1.4em;
+
+		background-color: white;
+
+		display: flex;
+		flex-direction: column;
+
+		div {
+			align-items: center;
+
+			img {
+				display: block;
+				width: 10%;
+			}
+		}
+
+		nav {
+			position: absolute;
+
+			width: 50%;
+			left: 50%;
+
+			line-height: 40px;
+		}
+	}
+}

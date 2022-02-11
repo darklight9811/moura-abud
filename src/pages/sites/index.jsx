@@ -1,6 +1,6 @@
 import a from "./style.module.scss"
 import { FaArrowLeft, FaHome, FaGripLines, FaBatteryHalf } from "react-icons/fa"
-import { getApps } from "./utils"
+import { getApps } from "../../utils/utils"
 
 const Sites = () => {
 	return (
